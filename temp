@@ -1,0 +1,36 @@
+#include <iostream>
+#include<string>
+#include<sstream>
+using namespace std;
+
+int main() {
+	int i=0,x=0,j;
+	string a,b,c[100],d,e,res="";
+	getline(cin,a);
+	getline(cin,b);
+	istringstream ss(a);
+	while(ss>>d)
+	{
+		c[i++]=d;
+	}i=0;
+	istringstream sb(b);
+	while(sb>>d){
+		if(d[0]=='{')
+		{
+			if(d[1]=='}')
+			res+=c[i++];
+			else if('0'<=d[1]<='9')
+			{j=1;
+				while(d[j]!='}')
+				{
+					x=x*10+(d[j]-'0');
+					j++;
+				}
+				res+=c[x];
+			}
+			else res+=d.substr(1,d.length()-1);
+		}
+		else res+=d;
+	}
+	return 0;
+}
