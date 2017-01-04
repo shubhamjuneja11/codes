@@ -36,11 +36,27 @@ public class Pyramid{
         System.out.println();
   }
   }
-  
+  static void number(int n){
+    for(i=1;i<=5;i++){
+      for(j=1;j<=i;j++)
+          System.out.print(j+" ");
+            System.out.println();
+
+    }
+  }
+  static void number2(int n){
+    int k=1;
+    for(i=1;i<=5;i++){
+      for(j=1;j<=i;j++,k++)
+          System.out.print(k+" ");
+            System.out.println();
+
+    }
+  }
   public static void main(String[] args) {
     int n;
     Scanner in= new Scanner(System.in);
     n=in.nextInt();
-    left(n);
+    number2(n);
   }
 }
