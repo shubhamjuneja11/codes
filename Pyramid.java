@@ -1,4 +1,5 @@
 import java.util.Scanner;
+/*HELLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOO*/
 public class Pyramid{
   static  int i,j;
   static void right(int n){
