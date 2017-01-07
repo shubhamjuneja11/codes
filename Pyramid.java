@@ -58,6 +58,9 @@ public class Pyramid{
     int n;
     Scanner in= new Scanner(System.in);
     n=in.nextInt();
+    left(n);
+    right(n);
+    pyramid(n);
     number2(n);
   }
 }
